@@ -1,0 +1,144 @@
+.contant{
+    width: 1320px;
+  
+    
+}
+.blog-btn{
+    background-color: #FF1F3D;
+    padding: 8px 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+}
+.blog-btn a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    border-bottom: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+}
+#button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categoryButton{
+    margin:20px 15px ;
+   
+}
+.box{
+    width: 300px;
+    height: 325px;
+    margin: 16px 5px;
+    border-radius: 10px;
+}
+.categories{
+    width: 100%;
+    
+}
+.thumbanail{
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.thumbanail-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.verify{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+#category-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    
+
+}
+.profile-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    text-align: center;
+}
+.title-views{
+    display: flex;
+    align-items: center;
+}
+.verify-profile_name{
+    display: flex;
+}
+.verify-profile_name p{
+    margin-bottom: 3px;
+}
+.title-name{
+    margin-left: 20px;
+}
+.nodata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.nodata h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin:30px 20px;
+    text-align: center;
+}
+
+.btn-home{
+    margin-top: 20px;
+    padding: 8px 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: black;
+}
+.btn-home a{
+    text-decoration: none;
+    color: white;
+}
+
+/* accordion items */
+
+div#blog-pages {
+    background-image: url(/images/2.jpg);
+    padding: 200px 0px;
+}
+
+div#accordionExample {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+button.accordion-button.collapsed {
+    background: black;
+    color: white;
+}
+.accordion-body {
+    background: #0e0e10;
+    color: white;
+}
+
+.post-date{
+    position: absolute;
+    bottom: -1px;
+    right: 7px;
+    background-color: #171717;
+    color: white;
+    border-radius: 5px;
+    padding: 1px 10px;
+  }
