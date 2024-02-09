@@ -93,12 +93,6 @@ const sortByeViews = () => {
     });
 };
 
-
-function sortByView(view) {
-    view.sort((a,b)=>a-b);
-    view.reverse();
-    return sortByVideosViews(view);
-}
  
 
 function secondToMinutes(seconds){
