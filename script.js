@@ -1,3 +1,4 @@
+let tracker = 1000;
 const loadAllData =(global) =>{
     const allCategoryValue = document.getElementById('allCategory').value;
     
@@ -8,7 +9,7 @@ const loadAllData =(global) =>{
 }
 const loadMusiclData =() =>{
     const allCategoryValue = document.getElementById('musicCategory').value;
-    
+    tracker = 1001;
     fetch(`https://openapi.programming-hero.com/api/videos/category/${allCategoryValue}`)
         .then(res => res.json())
         .then(alldata => displayData(alldata.data))    
@@ -16,7 +17,7 @@ const loadMusiclData =() =>{
 }
 const loadComdeyData =() =>{
     const allCategoryValue = document.getElementById('comdeyCategory').value;
-    
+    tracker = 1003;
     fetch(`https://openapi.programming-hero.com/api/videos/category/${allCategoryValue}`)
         .then(res => res.json())
         .then(alldata => displayData(alldata.data))    
@@ -24,7 +25,7 @@ const loadComdeyData =() =>{
 }
 const loadDrawData =() =>{
     const allCategoryValue = document.getElementById('drawCategory').value;
-    
+    tracker = 1005;
     fetch(`https://openapi.programming-hero.com/api/videos/category/${allCategoryValue}`)
         .then(res => res.json())
         .then(alldata => displayData(alldata.data))    
@@ -32,9 +33,11 @@ const loadDrawData =() =>{
 }
 
 
+
 function displayData(data){
     const categoryContainer = document.getElementById('category-container');
     if(data.length == 0){
+        while(categoryContainer.firstElementChild) categoryContainer.removeChild(categoryContainer.firstElementChild);
         const noData = document.createElement('div');
         noData.classList.add('nodata');
         noData.innerHTML = `
@@ -43,6 +46,7 @@ function displayData(data){
         categoryContainer.appendChild(noData)
     }
     else{
+        while(categoryContainer.firstElementChild) categoryContainer.removeChild(categoryContainer.firstElementChild);
         data.forEach(ct => {
             const card = document.createElement('div');
             card.classList.add('box');
@@ -70,6 +74,24 @@ function displayData(data){
         })
     }
 }
+
+
+//sort by view
+const sortByeViews = () => {
+    console.log(tracker);
+    fetch(`https://openapi.programming-hero.com/api/videos/category/${tracker}`)
+    .then((res) => res.json())
+    .then((data) => {
+        data.data.sort(function(a, b) {
+            var viewsA = parseInt(a.others.views);
+            var viewsB = parseInt(b.others.views);
+
+            return viewsB - viewsA; 
+        });
+
+        displayData(data.data);
+    });
+};
 
 
 function sortByView(view) {

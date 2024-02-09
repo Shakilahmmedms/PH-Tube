@@ -15,36 +15,66 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Accordion Item #1
+                  Discuss the scope of var, let, and const
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                 
+                    <code>Var:</code><br>
+                    Variables declared with var are function-scoped or globally scoped.
+                    If declared inside a function, the variable is available throughout the entire function, even before the actual declaration. This is known as "hoisting."
+                    If declared outside any function, it becomes a global variable.
+                    <br>
+
+                    <code>Let:</code> <br>
+                    Variables declared with let are block-scoped, which means they exist only within the block (statement or compound statement) in which they are defined.
+                    Variables declared with let are not hoisted to the top of the block.
+                    let variables can be updated but not re-declared within the same scope.
+                    <br>
+
+                    <code>Const: <br></code>
+                    
+                    Variables declared with const are block-scoped, similar to let.
+                    However, const variables cannot be reassigned. Once assigned, their value cannot be changed.
+                    const variables must be initialized at the time of declaration.
+                    Like let, const variables are not hoisted.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
+                  Tell us the use cases of null and undefined
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                 
+                    <code>Null: <br></code>
+                    null is explicitly assigned by developers to indicate the absence of a value.
+                    It can be used to reset or clear a variable's value.
+                    null is an object, but it is considered a primitive value.
+                    It can be used as a placeholder when a value is expected but not yet available or applicable.
+                    <br>
+                   <code>Undefinedb: <br></code> 
+                    undefined typically represents the absence of an assigned value in a variable or the absence of a return value from a function.
+                    If a variable is declared but not initialized, or if a property does not exist in an object, its value is undefined.
+                    It is automatically assigned to variables that have been declared but not assigned a value.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                  What do you mean by REST API?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <code>API: <br></code>
+                  An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other. A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style.
+                    
                 </div>
               </div>
             </div>
